@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(0, 0, 104);
+    color: white;
+}
+
+.nav {
+    padding: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navSearch {
+    background-color: transparent;
+    border: none;
+    width: 95px;
+}
+
+.navSearch::placeholder {
+    color: white;
+    font-size: 15px;
+}
+
+
+.main {
+    background-image: url("Background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    height: 80vh;
+    width: 95%;
+    margin: auto;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.heading {
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+
+.cityInp {
+    border: none;
+    padding: 15px;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 45vh;
+}
+
+
+.result {
+    flex-wrap: wrap;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 25px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* From Uiverse.io by Peary74 */
+button {
+    font-family: inherit;
+    font-size: 20px;
+    background: #212121;
+    color: white;
+    fill: rgb(155, 153, 153);
+    padding: 5px 25px;
+    padding-left: 0.9em;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 15px;
+    font-weight: 1000;
+    margin-top: 25px;
+}
+
+button span {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
+}
+
+button svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+}
+
+button:hover {
+    background: #000;
+}
+
+button:hover .svg-wrapper {
+    transform: scale(1.25);
+    transition: 0.5s linear;
+}
+
+button:hover svg {
+    transform: translateX(1.2em) scale(1.1);
+    fill: #fff;
+}
+
+button:hover span {
+    opacity: 0;
+    transition: 0.5s linear;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
